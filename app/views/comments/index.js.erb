@@ -1,0 +1,4 @@
+$('#view_comments<%= @post.id  %>').hide();
+$('#hide_comments<%= @post.id  %>').show();
+$('#comments<%= @post.id  %>').html('<%= j render @comments  %>');
+$('#comments_paginator<%= @post.id  %>').html('<%= j paginate(@comments, remote: true)  %>');

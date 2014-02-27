@@ -1,0 +1,10 @@
+<div class="comment" >
+  <h3>Comment <%= comment.id %>:</h3>
+  <p><%= comment.body %></p>
+  <div class="reply">
+    <% comment.replies.each do |reply| %>
+    <h4>Reply <%= reply.id %>:</h4>
+    <p><%= reply.body %></p>
+    <% end %>
+  </div>
+</div>
