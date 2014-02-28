@@ -14,3 +14,6 @@ My approach to this was to make the app as fast as possible server side but base
 + Increasing Dynos
 + Distributing content with Cloudfront CDN
 
+Link to Loadimpact test
+
+http://loadimpact.com/load-test/ivanblog.gringo.io-c33e20c49ca7ff3615452bc17760bf76
