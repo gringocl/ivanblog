@@ -1,9 +1,16 @@
-# My New Blog!
+# This was Ivan the Terribles Blog site!!!!
+## Now it is Miles' super slow fast blog site!!!!
 
-I've got a lot to say, and now I have a place to say it!!!!!
+Objective of this application was to make the blog as performant as required by the following formula (larger number better)
+ (# of resources on the page) * (total Load Impact requests) / (average load time in ms) 
 
-Read all my amazing posts!!!!! You can load them into the app with: `rake load_blog:load_shit`
+My approach to this was to make the app as fast as possible server side but based on the fact that number of resources was a multiplier in the scoring formula, I decided to optimize for the larger spectrum.  This involved a number of different tecniques.
++ Indexing all ids in the database
++ Eager loading tables
++ Reducing erb templates to a minimum
++ Gziping the resources internally in Rack
++ Minifying Files
++ Using Unicorn on Heroku
++ Increasing Dynos
++ Distributing content with Cloudfront CDN
 
-Since I know you want to read them all, I designed my page to show EVERYTHING on the front page of the site!!!!!
-
-I know it is a little slow (but totes worth it!!!!)... _Do you know how I can make it faster?_
